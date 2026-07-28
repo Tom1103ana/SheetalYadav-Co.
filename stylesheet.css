@@ -91,18 +91,120 @@ so home,about,services section are gone and only name and contact button exist *
 
 }
 /*-------------------------------------home section-----------------------------------------*/
-.home{
-    position: relative;
-    height: 100vh;
-
-    background-image: url("images/background1.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/*--------for desktop--------------*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+.hero{
+    display:flex;
+    width:100%;
+    min-height:100vh;
 
+}
+.hero-left,
+.hero-right{
+    width:50%;
+    position:relative;
+    display:flex;
+    align-items:center;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+.hero-left{
+    background: url("images/accounting.jpg") center center/cover no-repeat;
+}
+.hero-right{
+    background: url("images/legal.jpg") center center/cover no-repeat;
+}
+.content{
+    position:relative;
+    z-index:2;
+    color:white;
+    max-width:550px;
+    padding:80px;
+}
+.content h1{
+    font-size:64px;
+    line-height:1.15;
+}
+.content span{
+    color:#d6a33f;
+}
+.content p{
+    margin-top:35px;
+    font-size:28px;
+    line-height:1.6;
+}
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+}
+/* ---------------- FEATURES ---------------- */
+.features{
+    background:#041b35;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:40px 5%;
+}
+.feature{
+    display:flex;
+    gap:20px;
+    color:white;
+    align-items:flex-start;
+}
+.feature img{
+    width:80px;
+}
+.feature h3{
+    margin-bottom:12px;
+    font-size:24px;
+}
+.feature p{
+    font-size:18px;
+    line-height:1.6;
+}
+/*----------for mobile-----------------*/
+@media(max-width:768px){
+.hero{
+    flex-direction:column;
+}
+.hero-left,
+.hero-right{
+    width:100%;
+    min-height:60vh;
+}
+.content{
+    max-width:100%;
+    padding:40px;
+    text-align:center;
+}
+.content h1{
+    font-size:36px;
+}
+.content p{
+    font-size:18px;
+}
+.features{
+    grid-template-columns:1fr;
+}
+.feature{
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+    align-items:center;
+}
+}
 /*----------------------------------------------about me----------------------------------------------*/
-
 .aboutus{
     width:90%;
     margin:auto;
@@ -113,7 +215,7 @@ so home,about,services section are gone and only name and contact button exist *
     gap:70px;
 }
 .about-text{
-    width:50%;
+    flex:1;
 }
 .about-text h3{
     font-size:38px;
@@ -134,7 +236,8 @@ so home,about,services section are gone and only name and contact button exist *
 }
 .cards-container{
     position:relative;
-    width:760px;
+    flex:1;
+    max-width:760px;
     height:500px;
     margin-left:0;
 }
@@ -171,6 +274,41 @@ so home,about,services section are gone and only name and contact button exist *
     right:220px;
     bottom:30px;
     z-index:3;
+}
+@media (max-width:768px){
+
+.aboutus{
+    flex-direction:column;
+    gap:40px;
+}
+.about-text{
+    width:100%;
+    text-align:center;
+}
+.about-text h3{
+    font-size:30px;
+}
+.about-text p{
+    font-size:15px;
+}
+.cards-container{
+    width:100%;
+    height:auto;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+    position:static;
+}
+.card{
+    position:static;
+    width:100%;
+    height:250px;
+}
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
 }
 /*-------------------------------------services-------------------------------------------------*/
 .services h2{
@@ -310,14 +448,91 @@ so home,about,services section are gone and only name and contact button exist *
     background:#173866;
 }
 /*-------------------------------------------why choose us-----------------------------------------------*/
-.whychooseus{
-    position: relative;
-    height: 100vh;
-    background-image: url("images/background2.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 90px;
+.why-choose-us{
+    width:100%;
+    min-height:100vh;
+    background:#001326;
+    padding:80px 4%;
+    display:flex;
+    align-items:center;
+}
+.content{
+    width:100%;
+}
+/* LEFT SECTION */
+.left{
+    width:100%;
+}
+.why-title{
+    text-align:center;
+    color:#fff;
+    background-color:#001326;
+    font-size:60px;
+    font-family:Georgia, serif;
+}
+.left ul{
+    list-style:none;
+}
+.left li{
+    display:flex;
+    align-items:center;
+    gap: 25px;
+    margin-bottom:35px;
+}
+.icon{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#d4a017;
+    color:#001326;
+    font-size:30px;
+    font-weight:bold;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
+}
+.left span{
+    color:#fff;
+    font-size:34px;
+    white-space: nowrap;
+}
+/* ---------- Mobile ---------- */
+@media(max-width:768px){
+
+.why-choose-us{
+    padding:60px 25px;
+}
+
+.left h2{
+    font-size:38px;
+    white-space: normal;
+}
+
+.gold-line{
+    width:170px;
+    margin:20px auto 40px;
+}
+
+.left li{
+    align-items:flex-start;
+    gap:18px;
+    margin-bottom:28px;
+}
+
+.icon{
+    width:45px;
+    height:45px;
+    font-size:22px;
+}
+
+.left span{
+    font-size:20px;
+    white-space: normal;
+}
+
 }
 /*--------------------------------------------contactus---------------------------------------------------*/
 h2{
