@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Web Page</title>
+        <style>
+.services h2{
+    font-family: sans-serif;
+    color: #10284d;
+    text-align:center;
+    font-size:40px;
+}
+.services{
+    width:90%;
+    margin:auto;
+    padding:90px 0;
+    text-align:center;
+}
+.gold-line{
+    width: 200px;
+    height:4px;
+    background:#C89B3C;
+    margin:auto;
+    border-radius:10px;
+    margin-bottom:50px;
+}
+/*for whole service container*/
+.servicecard-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+/*for individual card*/
+.service-card{
+    width:180px;
+    background:white;
+    padding:30px 18px;
+    border-radius:15px;
+    border:1px solid #ececec;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+/*for service icon */
+.service-card img{
+    width:60px;
+    margin-bottom:20px;
+}
+/*heading*/
+.service-card h3{
+    font-size:20px;
+    margin-bottom:15px;
+}
+/*hover effect*/
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+
+</style>
+    </head>
+
+    <body>
+        <section id="services" class="services">
+        <h2>OUR SERVICES</h2> 
+        <div class="gold-line"></div>
+    <div class="servicecard-container">
+        <div class="service-card">
+            <img src="images/accounting.png" alt="Accounting ">
+            <h3>Accounting and Bookkeeping</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/legal.png" alt="Legal advisory">
+            <h3>Legal Advisory</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/gst.png" alt="GST Services">
+            <h3>GST Services</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/taxation.png" alt="Taxation Services">
+            <h3>Taxation Services</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/litigation.png" alt="Litigation">
+            <h3>Litigation and Representation</h3>
+        </div>
+    </div>
+    </section>
+    </body>
+</html>

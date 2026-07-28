@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Web Page</title>
+        <style>
+.aboutus{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:70px;
+}
+.about-text{
+    flex:1;
+}
+.about-text h2{
+    font-size: 28px;
+    margin-bottom: 2px;
+    color: #10284d;
+}
+.heading h3{
+    font-size:46px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #10284d;
+}
+.list{
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+.about-text p{
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+.cards-container{
+    position:relative;
+    flex:1;
+    max-width:760px;
+    height:500px;
+    margin-left:0;
+}
+.card{
+    position:absolute;
+    overflow:hidden;
+    border-radius:18px;
+    border:4px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+.card1{
+    width:380px;
+    height:290px;
+    left:0;
+    top:90px;
+    z-index:1;
+}
+.card2{
+    width:400px;
+    height:260px;
+    left:280px;
+    top:20px;
+    z-index:2;
+}
+.card3{
+    width:180px;
+    height:210px;
+    right:220px;
+    bottom:30px;
+    z-index:3;
+}
+@media (max-width:768px){
+    
+.aboutus{
+    flex-direction:column;
+    gap:40px;
+}
+.about-text{
+    width:100%;
+    text-align:center;
+}
+.about-text h3{
+    font-size:30px;
+}
+.about-text p{
+    font-size:15px;
+}
+.cards-container{
+    width:100%;
+    height:auto;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+    position:static;
+}
+.card{
+    position:static;
+    width:100%;
+    height:250px;
+}
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+}
+        </style>
+    </head>
+    <body>
+    <div class="heading">
+        <h3>About Sheetal Yadav & Co.</h3>
+    </div>
+    <section id="about" class="aboutus">
+    <div class="about-text">
+        <p>Sheetal Yadav & Co. is a multidisciplinary professional firm committed to delivering reliable, ethical, and result-oriented financial, taxation, compliance, and legal solutions to individuals, startups, businesses, and organizations.</p>
+        <p>Our firm brings together the expertise of CA Sheetal Yadav, a Chartered Accountant, and Advocate Anjali Yadav, enabling clients to receive comprehensive professional support under one roof. By integrating financial and legal advisory services, we help clients make informed decisions while ensuring full compliance with applicable laws and regulations.</p>
+        <p>We believe that every client deserves practical advice, transparent communication, and personalized attention. Whether you need assistance with income tax, GST, company compliance, business registration, accounting, audits, or legal representation in civil, criminal, family, or commercial matters, our team is dedicated to providing timely and effective solutions.</p>
+        <h2>Our Vision</h2>
+        <p>To become a trusted professional firm known for excellence, integrity, and client satisfaction by delivering high-quality financial and legal services.</p>
+        <h2>Our Mission</h2>
+        <ul class="list">
+            <li>To provide accurate, timely, and cost-effective professional services.</li>
+            <li>To build long-term relationships based on trust and transparency.</li>
+            <li>To simplify complex financial and legal matters for our clients.</li>
+            <li>To support businesses and individuals in achieving compliance and sustainable growth.</li>
+        </ul>
+        <p>At Sheetal Yadav & Co., we are committed to protecting your interests, ensuring compliance, and helping you move forward with confidence.</p>
+    </div>
+
+   
+    <div class="cards-container">
+    <div class=" card card1">
+        <img src="images/card employee img.png" alt="">
+    </div>
+    <div class="card card2">
+        <img src="images/card law img.png" alt="">
+    </div>
+    <div class="card card3">
+        <img src="images/card finance img.png" alt="">
+    </div>
+    </section>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Web Page</title>
+        <style>
+            .ourteam h2{
+    font-family: sans-serif;
+    color: #10284d;
+    text-align:center;
+    font-size:40px;
+}
+.gold-line{
+    width:80px;
+    height:4px;
+    background:#C89B3C;
+    margin:auto;
+    border-radius:10px;
+    margin-bottom:50px;
+}
+/*card-container*/
+.team-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.team-card{
+    width: 520px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ececec;
+    overflow:hidden;
+    border-radius:18px;
+    border:4px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    transition: 1s;
+}
+.team-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+.team-card img{
+    width:180px;
+    height:240px;
+    object-fit:cover;
+}
+.team-card h3{
+    font-family: sans-serif;
+    font-size:26px;
+}
+.team-card h4{
+    font-family:sans-serif;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+        </style>
+        
+    </head>
+    <body>
+    <section id="team"class="ourteam">
+        <h2>Our Team</h2>
+        <div class="gold-line"></div>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="images/sheetalsticker.png" alt="sheetal">
+                <div class="team-info">
+                    <h3>Sheetal Yadav</h3>
+                    <h4>Chartered Accountant</h4>
+                    <p>Expert in Taxation, Accounting, GST and Business Advisory with client first approach.</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="images/anjalisticker.png" alt="Anjali">
+                <div class="team-info">
+                    <h3>Anjali Yadav</h3>
+                    <h4>Advocate</h4>
+                    <p>Specialized in Civil,Criminal,Family and Corporate Law with strong advocacy skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>
