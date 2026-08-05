@@ -32,15 +32,31 @@
     gap:20px;
     flex-wrap:wrap;
 }
+.ca-services, .legal-services{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.ca-services h3,
+.legal-services h3{
+    width:100%;          /* Take the full row */
+    flex-basis:100%;     /* Force a new line */
+    text-align:center;
+    font-size:30px;
+    color:#10284d;
+    margin-bottom:30px;
+}
 /*for individual card*/
 .service-card{
     width:180px;
     background:white;
-    padding:30px 18px;
+    padding:30px 30px;
     border-radius:15px;
     border:1px solid #ececec;
     box-shadow:0 6px 18px rgba(0,0,0,.08);
     transition:.3s;
+    margin-left:20px;
 }
 /*for service icon */
 .service-card img{
@@ -66,26 +82,112 @@
         <h2>OUR SERVICES</h2> 
         <div class="gold-line"></div>
     <div class="servicecard-container">
+    <div class="ca-services">
+        <h3>CHARTERED ACCOUNTANT SERVICES</h3>
         <div class="service-card">
-            <img src="images/accounting.png" alt="Accounting ">
-            <h3>Accounting and Bookkeeping</h3>
+            <img src="images/income tax.png" alt="income tax return">
+            <h3>Income Tax Return (ITR) Filing</h3>
         </div>
         <div class="service-card">
-            <img src="images/legal.png" alt="Legal advisory">
-            <h3>Legal Advisory</h3>
+            <img src="images/tax planning.png" alt="Tax planning">
+            <h3>Tax Planning & Advisory</h3>
         </div>
         <div class="service-card">
-            <img src="images/gst.png" alt="GST Services">
-            <h3>GST Services</h3>
+            <img src="images/gst.png" alt="GST registration">
+            <h3>GST Registration & Return Filing</h3>
         </div>
         <div class="service-card">
-            <img src="images/taxation.png" alt="Taxation Services">
-            <h3>Taxation Services</h3>
+            <img src="images/tds.png" alt="TDS Compliance & Returns">
+            <h3>TDS Compliance & Returns</h3>
         </div>
         <div class="service-card">
-            <img src="images/litigation.png" alt="Litigation">
-            <h3>Litigation and Representation</h3>
+            <img src="images/company llp.png" alt="Company, LLP & Firm Registration">
+            <h3>Company, LLP & Firm Registration</h3>
         </div>
+        <div class="service-card">
+            <img src="images/startup.png" alt="MSME & Startup Registration ">
+            <h3>MSME & Startup Registration</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/bookkeeping.png" alt="Accounting & Bookkeeping">
+            <h3>Accounting & Bookkeeping</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/tax audit.png" alt="Statutory & Tax Audit">
+            <h3>Statutory & Tax Audit</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/annual.png" alt="ROC Compliance & Annual Filings">
+            <h3>ROC Compliance & Annual Filings</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/cma reports.png" alt="Project Reports & CMA Reports">
+            <h3>Project Reports & CMA Reports</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/pan card.png" alt="PAN, TAN & DSC Services">
+            <h3>PAN, TAN & DSC Services</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/financial statement.png" alt="Financial Statement Preparation">
+            <h3>Financial Statement Preparation</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/business.png" alt="Business Advisory">
+            <h3>Business Advisory & Compliance</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/labour law.png" alt="payroll">
+            <h3>Payroll & Labour Law Compliance</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/nri.png" alt="nri tax">
+            <h3>NRI Taxation & Tax Consultancy</h3>
+        </div>
+    </div>
+    <div class="legal-services">
+        <h3>LEGAL SERVICES</h3>
+        <div class="service-card">
+            <img src="images/civil.png" alt="Civil & Criminal Litigation">
+            <h3>Civil & Criminal Litigation</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/cheque bounce.png" alt="Cheque Bounce Cases">
+            <h3>Cheque Bounce Cases (NI Act)</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/family.png" alt="Family & Divorce Cases">
+            <h3>Family & Divorce Cases</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/consumer.png" alt="Consumer Disputes">
+            <h3>Consumer Disputes</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/legal notice.png" alt="Legal Notices">
+            <h3>Legal Notices & Replies</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/drafting.png" alt="Drafting of Agreements & Contracts">
+            <h3>Drafting of Agreements & Contracts</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/bail.png" alt="Bail Applications">
+            <h3>Bail Applications</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/resolvery suit.png" alt="Recovery Suits & Execution Proceedings">
+            <h3>Recovery Suits & Execution Proceedings</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/sales deed.png" alt="Registration of Sale Deeds, Gift Deeds & Rent Agreements">
+            <h3>Registration of Sale Deeds, Gift Deeds & Rent Agreements</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/trademark.png" alt="Trademark, Copyright & Intellectual Property Matters">
+            <h3>Trademark, Copyright & Intellectual Property Matters</h3>
+        </div>
+    </div>
     </div>
     </section>
     </body>
