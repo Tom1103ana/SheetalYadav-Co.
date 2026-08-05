@@ -314,7 +314,10 @@ so home,about,services section are gone and only name and contact button exist *
     width:100%;
     height:250px;
 }
-.card img{
+.card1,.card2{
+    display:none;
+}
+.card3{
     width:100%;
     height:100%;
     object-fit:cover;
@@ -350,23 +353,26 @@ so home,about,services section are gone and only name and contact button exist *
 }
 /*for individual card*/
 .service-card{
-    width:180px;
+    width:500px;
+    height: 250px;
     background:white;
     padding:30px 18px;
     border-radius:15px;
     border:1px solid #ececec;
     box-shadow:0 6px 18px rgba(0,0,0,.08);
     transition:.3s;
+    margin-top:40px;
 }
 /*for service icon */
 .service-card img{
-    width:60px;
+    width:80px;
     margin-bottom:20px;
 }
 /*heading*/
 .service-card h3{
-    font-size:20px;
+    font-size:28px;
     margin-bottom:15px;
+    color:#10284d;
 }
 /*hover effect*/
 .service-card:hover{
@@ -456,23 +462,17 @@ so home,about,services section are gone and only name and contact button exist *
 .team-card h4{
     font-family:sans-serif;
     font-size: 20px;
+}
+.team-card h5{
+    font-family:sans-serif;
+    font-size: 16px;
     margin-bottom: 12px;
 }
-.team-button{
-    margin-top:45px;
-    padding:15px 35px;
-    background:#10284d;
-    color:white;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
-    cursor:pointer;
-    margin-bottom: 55px;
-    transition:.3s;
-}
-
-.team-button:hover{
-    background:#173866;
+.team-card p{
+    font-family:sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
 }
 /*-------------------------------------------why choose us-----------------------------------------------*/
 *{
@@ -484,7 +484,7 @@ body{
     font-family:Arial, Helvetica, sans-serif;
 }
 .why-choose-us{
-
+    margin-top:50px;
     width:100%;
     background:#001326;
     padding:80px 6%;
@@ -687,6 +687,23 @@ h2{
     transition:.3s;
     box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
+.contact-email{
+    font-size:20px;
+}
+.contact-info{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.contact-info a{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    width:100%;
+
+    text-decoration:none;
+    color:#10284d;
+}
 .contact-info:hover{
     background:#a8b7cb;
 }
@@ -752,6 +769,12 @@ h2{
 }
 .outro p{
     color: white;
+    padding-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+.outro h5{
+    margin-top: 80px;
     padding-top: 10px;
     font-size: 16px;
     text-align: center;
